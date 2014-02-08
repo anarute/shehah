@@ -7,6 +7,8 @@ app.controller("MainController", function($scope, $http){
 		phrases = res.data;
 	});
 
+	$scope.shit = "Clique no selo para ler sua sorte do dia."
+
 	$scope.fala_shehah = function() {
 		$scope.shit = phrases[Math.floor(Math.random()*phrases.length)].shit
 	}
